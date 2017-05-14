@@ -1,13 +1,28 @@
-<h1>Quotes App</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div id="burger" class="col-lg-4 col-lg-offset-4">
 
-<p>Manage quotes with this app</p>
+<img src="/assets/images/burger.jpg" class="img-responsive .center-block">
+     <!--height="50%" width="50%">-->
+
+<h1 class="text-center">Eat-Da-Burger!</h1>
+
+<!--handlebar code goes here-->
+
+
+<form action="/" class="text-center">
+    <textarea name="message" rows="6" cols="50"></textarea>
+    <br>
+    <input type="submit">
+</form>
+
 
 <!-- Data gets passed via server.js from this point forward. -->
 <!--<ul>-->
-  <!--{{#each quotes}}-->
+  <!--{{#each burgers}}-->
   	<!--<li>-->
       <!--<p><span class="label">ID:</span> {{this.id}}</p>-->
-      <!--<p><span class="label">Quote:</span> {{this.quote}}</p>-->
+      <!--<p><span class="label">:</span> {{this.burger_name}}</p>-->
       <!--<p><span class="label">Author:</span> {{this.author}}</p>-->
 
       <!--{{!-- Form should send a delete command to the server --}}-->
@@ -21,7 +36,7 @@
   <!--{{/each}}-->
 <!--</ul>-->
 
-<h2>Add a Quote</h2>
+<h2></h2>
 
 {{!-- Form should send a post command to the server --}}
 <!--<form class="create-form" action="/" method="POST">-->
@@ -38,3 +53,6 @@
 
   <!--<button type="submit">Add Quote</button>-->
 <!--</form>-->
+        </div>
+    </div>
+</div>

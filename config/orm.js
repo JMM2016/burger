@@ -1,5 +1,7 @@
 const connection = require ("../config/connection.js")
 
+console.log("orm.js")
+
 // Helper function for SQL syntax.
 /*
 function objToSql(ob) {
@@ -60,7 +62,7 @@ const orm = {
 
     connection.query(query, (err, result) => {
       if (err) {
-        console.err(err)
+        console.log(err)
       }
       cb(result)
     })

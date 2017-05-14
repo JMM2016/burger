@@ -2,21 +2,23 @@
  * Created by Miguel on 5/11/2017.
  */
 const express = require('express')
-//const burger = require('../models/burger.js')
+const burger = require('../models/burger.js')
 
 const router = express.Router()
 
-router.get("/", function(req, res) { // can be anon fun?
-  // res.render("index")
+console.log("burgers-ctlr.js")
 
-  burger.readAll( data => {
-     let hbsObj = {
-       burgers: data
-     }
-     console.log(hbsObj)
-     res.render("index", hbsObj)
-  })
-}
+router.get("/", function(req, res) { // can be anon fun?
+  res.render("index")
+
+  // burger.readAll( data => {
+  //    let hbsObj = {
+  //      burgers: data
+  //    }
+  //    console.log(hbsObj)
+  //    res.render("index", hbsObj)
+  // })
+})
 
 router.post("/", function(req, res) {			
 	burger.create([
@@ -39,7 +41,7 @@ router.put("/:id", function(req, res) {
      console.log("put: " + param.body)
      res.render("index") // Or: res.redirect("/")
   })
-}
+})
 
 module.exports = router
 
